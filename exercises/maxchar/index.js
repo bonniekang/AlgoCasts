@@ -7,12 +7,20 @@
 
 function maxChar(str) {
     const chars = {};
+    let num = 0;
+    let maxChar = null;
 
     for(let char of str){
         chars[char] = chars[char] + 1 | 1
     }
 
-    return Math.max(chars[char])
+    for(let char in chars){
+        if(chars[char] > num){
+            num = chars[char];
+            maxChar = char;
+        }
+    }
+    return maxChar;
 }
 
 module.exports = maxChar;
