@@ -29,12 +29,12 @@ let startCol = 0;
 let endCol = n -1;
 
 while(startCol <= endCol && startRow <= endRow){
-    for(let i = startCol; i < endCol; i++){
+    for(let i = startCol; i <= endCol; i++){
         results[startRow][i] = counter;
         counter ++;
     }
     startRow++
-    for(let i = startRow; 1 <= endRow; i++){
+    for(let i = startRow; i <= endRow; i++){
         results[i][endCol] = counter
         counter++
     }
