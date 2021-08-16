@@ -10,6 +10,10 @@ class Node {
 }
 
 class LinkedList {
+    constructor(){
+        this.head = null;
+    }
+
     
 }
 
