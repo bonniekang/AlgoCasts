@@ -46,7 +46,12 @@ class Tree {
     }
 
     traverseDF(fn){
-        
+        const array = [this.root]
+        while(array.length){
+            const node = array.shift()
+            array.unshift(...node.children)
+            fn(node)
+        }
     }
 }
 
