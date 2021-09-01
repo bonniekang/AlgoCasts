@@ -33,6 +33,21 @@ class Tree {
     }
 
     // traverseBF & traverseDF
+    traverseBF(fn){
+        const array = [this.root]
+        while(array.length){
+            const node = array.shift();
+
+            array.push(...node.children)
+
+            fn(node)
+        }
+
+    }
+
+    traverseDF(fn){
+        
+    }
 }
 
 module.exports = { Tree, Node };
