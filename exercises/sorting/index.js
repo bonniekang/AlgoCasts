@@ -15,7 +15,15 @@ function bubbleSort(arr) {
 }
 
 function selectionSort(arr) {
+    // i, j, indexofmin
+    // from i = 1 to < array.length
 
+        // i is at least in the assign i to indexofmin
+        // for loop i from i + 1 to end of array
+            // see if there is an element with lower value
+                // if so, record its index
+        // if the index of the current element and index of the lowest element is not the samem, swap
+        
 }
 
 function mergeSort(arr) {
