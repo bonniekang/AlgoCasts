@@ -44,7 +44,13 @@ function mergeSort(arr) {
 }
 
 function merge(left, right) {
-
+    //create 'results' array
+    // while there are elements in both arrays
+        // if the first element left half is less than first right half
+            // shift the element from left into a result arr
+        // else
+            // shift the element from right into a result arr
+    // take everything from the array that still has stuff in it and put it in results
 }
 
 module.exports = { bubbleSort, selectionSort, mergeSort, merge };
