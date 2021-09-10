@@ -45,7 +45,16 @@ function mergeSort(arr) {
 
 function merge(left, right) {
     //create 'results' array
+    const results = []
     // while there are elements in both arrays
+    while(left.length && right.length){
+        if(left[0] < right[0]){
+            results.push(left.shift())
+        } else{
+            results.push(right.shift())
+        }
+    }
+    return [...results, ...left,...right]
         // if the first element left half is less than first right half
             // shift the element from left into a result arr
         // else
