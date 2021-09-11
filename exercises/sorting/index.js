@@ -40,7 +40,9 @@ function selectionSort(arr) {
 }
 
 function mergeSort(arr) {
-
+    if(arr.length === 1){
+        return arr
+    }
 }
 
 function merge(left, right) {
