@@ -145,7 +145,7 @@ class LinkedList {
             return
         }
 
-        if(index === 0){
+        if(integer === 0){
             this.head = new Node(data, this.head)
             return
         }
